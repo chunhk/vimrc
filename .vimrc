@@ -49,6 +49,7 @@ NeoBundle 'Raimondi/delimitMate'
 "NeoBundle 'rails.vim'
 NeoBundle 'taglist.vim'
 NeoBundle 'slimv.vim'
+NeoBundle 'upAndDown'
 
 
  " Non github repos
