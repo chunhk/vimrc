@@ -32,7 +32,7 @@ NeoBundle 'Shougo/vimproc'
 " Original repos on github
 NeoBundle 'ervandew/supertab'
 NeoBundle 'jnwhiteh/vim-golang'
-NeoBundle 'kevinw/pyflakes-vim'
+"NeoBundle 'kevinw/pyflakes-vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 "NeoBundle 'majutsushi/tagbar'
 NeoBundle 'scrooloose/nerdtree'
@@ -41,7 +41,7 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Raimondi/delimitMate'
 "NeoBundle 'tpope/vim-fugitive'
 "NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"
+
 
 " vim-scripts repos
 "NeoBundle 'L9'
@@ -54,6 +54,8 @@ NeoBundle 'upAndDown'
 
  " Non github repos
 "NeoBundle 'git://git.wincent.com/command-t.git'
+
+
  " Non git repos
 "NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 "NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
