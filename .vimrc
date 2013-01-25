@@ -8,6 +8,7 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set hlsearch
 colorscheme desert
 
 let g:slimv_swank_clojure = '! gnome-terminal -x lein swank &' 
