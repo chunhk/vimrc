@@ -9,10 +9,16 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set hlsearch
+set guitablabel=%t
 colorscheme desert
 
 let g:slimv_swank_clojure = '! gnome-terminal -x lein swank &' 
 set vb t_vb=
+
+" Call this in vim using :call Upwd()
+function! Upwd()
+  :lcd %:p:h
+endfunction
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
