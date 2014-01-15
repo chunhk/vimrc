@@ -10,6 +10,9 @@ set shiftwidth=2
 set expandtab
 set hlsearch
 set guitablabel=%t
+set ignorecase
+set wrapscan
+set autochdir
 colorscheme desert
 
 let g:slimv_swank_clojure = '! gnome-terminal -x lein swank &' 
@@ -48,6 +51,7 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Raimondi/delimitMate'
 "NeoBundle 'tpope/vim-fugitive'
 "NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+NeoBundle 'kien/ctrlp.vim'
 
 
 " vim-scripts repos
@@ -57,6 +61,7 @@ NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'taglist.vim'
 NeoBundle 'slimv.vim'
 NeoBundle 'upAndDown'
+NeoBundle 'bufexplorer.zip'
 
 
  " Non github repos
