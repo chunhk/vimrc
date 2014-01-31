@@ -52,6 +52,7 @@ NeoBundle 'Raimondi/delimitMate'
 "NeoBundle 'tpope/vim-fugitive'
 "NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'sjl/gundo.vim'
 
 
 " vim-scripts repos
@@ -88,3 +89,6 @@ if neobundle#exists_not_installed_bundles()
   echomsg 'Please execute ":NeoBundleInstall" command.'
   "finish
 endif
+
+" gundo settings
+nnoremap <F5> :GundoToggle<CR>
