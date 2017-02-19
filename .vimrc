@@ -70,9 +70,10 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Raimondi/delimitMate'
 "NeoBundle 'tpope/vim-fugitive'
 "NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'artur-shaik/vim-javacomplete2'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'flazz/vim-colorschemes'
 
 " vim-scripts repos
 "NeoBundle 'L9'
