@@ -74,6 +74,13 @@ NeoBundle 'sjl/gundo.vim'
 NeoBundle 'artur-shaik/vim-javacomplete2'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'Chiel92/vim-autoformat'
+NeoBundle 'Valloric/YouCompleteMe'
+
+" Google codefmt
+NeoBundle 'google/vim-maktaba'
+NeoBundle 'google/vim-codefmt'
+NeoBundle 'google/vim-glaive'
 
 " vim-scripts repos
 "NeoBundle 'L9'
@@ -84,7 +91,6 @@ NeoBundle 'slimv.vim'
 NeoBundle 'upAndDown'
 NeoBundle 'bufexplorer.zip'
 
-
  " Non github repos
 "NeoBundle 'git://git.wincent.com/command-t.git'
 
@@ -92,8 +98,6 @@ NeoBundle 'bufexplorer.zip'
  " Non git repos
 "NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 "NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
-
-
 
 call neobundle#end()
 
@@ -108,3 +112,20 @@ NeoBundleCheck
 nnoremap <F5> :GundoToggle<CR>
 
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+" Google codefmt
+call glaive#Install()
+" Optional: Enable codefmt's default mappings on the <Leader>= prefix.
+Glaive codefmt plugin[mappings]
+Glaive codefmt google_java_executable="java -jar /home/ubuntu/software/jars/google-java-format-1.3-all-deps.jar"
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer yapf
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+augroup END
